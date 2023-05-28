@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DravinWoods</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<style>
+    
+.section-team {
+	font-family: "Montserrat", sans-serif;
+	padding: 80px 0;
+}
+
+.section-team .header-section {
+	margin-bottom: 50px;
+}
+
+.section-team .header-section .small-title {
+    margin-bottom: 25px;
+	font-size: 16px;
+    font-weight: 500;
+    color: #fdbf5b;
+}
+
+.section-team .header-section .title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.section-team .single-person {
+	margin-top: 30px;
+	padding: 30px;
+	background-color: #f6f9ff;
+	border-radius: 5px;
+}
+
+.section-team .single-person:hover {
+	background: linear-gradient(to right, #fdbf5b, #989b60);
+}
+
+.section-team .single-person .person-image {
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    border: 4px dashed transparent;
+    transition: padding .3s;
+}
+
+.section-team .single-person:hover .person-image {
+	padding: 12px;
+    border: 4px dashed #fff;
+}
+
+.section-team .single-person .person-image img {
+	width: 100%;
+    border-radius: 50%;
+}
+
+.section-team .single-person .person-image .icon {
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: linear-gradient(to right, #fdbf5b, #ffa91f);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.section-team .single-person:hover .person-image .icon {
+	background: none;
+	background-color: #fff;
+	color: #fdbf5b;;
+}
+
+.section-team .single-person .person-info .full-name {
+	margin-bottom: 10px;
+	font-size: 28px;
+    font-weight: 700;
+}
+
+.section-team .single-person .person-info .speciality {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fdbf5b;
+}
+
+.section-team .single-person:hover .full-name,
+.section-team .single-person:hover .speciality {
+	color: #fff;
+}
+</style>
+<body>
+    
+    <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s" style="background-color: #3f505a !important; line-height: 0.25; ">
+        <div class="row gx-0 d-none d-lg-flex top-bar">
+            <div class="col-lg-6 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center social-media">
+                    <a class="text-body me-5" href="mailto:connect@dravinwoodworks.ca"><i class="fa fa-envelope-open me-2"></i>connect@dravinwoodworks.ca</a>
+                    <a class="text-body" href="tel:+1(604)591-2214"><i class="fa fa-phone-alt me-2"></i>+1 (604) 591-2214</a>
+                </div>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-left text-white">
+                    <a class="btn btn-sm-square btn-outline-body me-1" href="https://www.facebook.com/dravinwoodworks.ca/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href="https://www.instagram.com/dravinwoodworks.ca/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href="https://www.youtube.com/@dravinwoodworks"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0"><img class="me-3" src="img/logo.png" style=" width:140px;"></h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="about.html" class="nav-item nav-link active">About</a>
+                <a href="service.html" class="nav-item nav-link">Category</a>
+                <!-- <a href="service.html" class="nav-item nav-link">Projects</a> -->
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">PLACE ORDER</a>
+        </div>
+    </nav>
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-1 text-white animated slideInDown">About Us</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">About</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="about-img">
+                    <img class="img-fluid" src="img/about-1.jpg" alt="">
+                    <img class="img-fluid" src="img/about-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <h4 class="section-title" style="font-family: 'Montserrat', sans-serif;">About Us</h4>
+                <h1 class="display-5 mb-4">Design In Every Detail</h1>
+                <p>We are in the cabinet manufacturing business since 2005 and are the manufacturers of quality products for the kitchen cabinets, vanities, garage storage cabinets and closets.</p>
+                <p class="mb-4">We have designed the programme for the contractors, handy manand home owners. They can order their custom cabinet/storage, closet sizes online.</p>
+                <p class="mb-4">We provide the cabinets assembled with the option to have the cabinet doors put on the cabinets. We can arrange the deliveries throughout the lower mainland upon request</p>
+                <div class="d-flex align-items-center mb-5">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary" style="width: 120px; height: 120px; background-color:#3f505a; border-color:#3f505a!important; border-radius: 1rem;">
+                        <h1 class="display-1 mb-n2" data-toggle="counter-up" style="color: #f5f4f4e3;">18</h1>
+                    </div>
+                    <div class="ps-4">
+                        <h3>Years</h3>
+                        <h3>Working</h3>
+                        <h3 class="mb-0">Experience</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-10 wow fadeIn" data-wow-delay="0.5s">
+                <h1 class="display-4 my-3">More about us</h1>
+                <p>We are in the cabinet manufacturing business since 2005 and are the manufacturers of quality products for the kitchen cabinets, vanities, garage storage cabinets and closets.</p>
+                <p class="mb-4">We have designed the programme for the contractors, handy manand home owners. They can order their custom cabinet/storage, closet sizes online. We provide the cabinets assembled with the option to have the cabinet doors put on the cabinets. We can arrange the deliveries throughout the lower mainland upon request</p>
+                <p>We are in the cabinet manufacturing business since 2005 and are the manufacturers of quality products for the kitchen cabinets, vanities, garage storage cabinets and closets.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- team -->
+<section class="section-team" style="margin-top: -38px;">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="header-section">
+                    <h2 class="title">Meet team members</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="https://media.istockphoto.com/id/1337144146/vector/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=BIbFwuv7FxTWvh5S3vB6bkT0Qv8Vn8N5Ffseq84ClGI=" alt="">
+                        <span class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Paul Kaushal</h3>
+                        <span class="speciality">Founder & CEO</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="https://media.istockphoto.com/id/1337144146/vector/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=BIbFwuv7FxTWvh5S3vB6bkT0Qv8Vn8N5Ffseq84ClGI=" alt="">
+                        <span class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Nidhi Kaushal</h3>
+                        <span class="speciality">Co-Foundder</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="single-person">
+                    <div class="person-image">
+                        <img src="https://media.istockphoto.com/id/1337144146/vector/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=BIbFwuv7FxTWvh5S3vB6bkT0Qv8Vn8N5Ffseq84ClGI=" alt="">
+                        <span class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </span>
+                    </div>
+                    <div class="person-info">
+                        <h3 class="full-name">Sandeep Garg</h3>
+                        <span class="speciality">EVP Sales</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- vdo -->
+<div class="container-xxl my-5">
+    <iframe class="w-100" height="660" src="https://www.youtube.com/embed/XOE9hkk5ytA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <img src="img/logo.png">
+                        </div>
+                        <div>
+                            <h5 class="text-white">Providing the best range of Custom Cabinets at Factory Price.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Catalouge</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-dark copyright">
+        <div class="row gx-0 d-none d-lg-flex top-bar">
+            <div class="col-lg-4 text-start">
+               
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="h-100 d-inline-flex align-items-center text-white">
+                    © Copyright dravinwoodworks 2023
+                </div>
+            </div>
+            <div class="col-lg-4 text-end">
+                <div class="h-100 d-inline-flex align-items-left text-white">
+                    <a class="btn btn-sm-square btn-outline-body me-1" href="https://www.facebook.com/dravinwoodworks.ca/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href="https://www.instagram.com/dravinwoodworks.ca/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href="https://www.youtube.com/@dravinwoodworks"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
