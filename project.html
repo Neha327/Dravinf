@@ -29,7 +29,122 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
+<style>
+    .portfolio {
+margin-top: 50px;
+    
+}
+.boxy{
+  position: relative;
+    display: block;
+  width: 40%;
+  height: 300px;
+  margin: 0 auto 2em;
+  padding: 0;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow:0px 25px 50px rgba(0,0,0,.5);
+  overflow:hidden;
+  transition:all .4s ease;
+}
+.portfolio h3{
+  padding-left: 326px;
+  margin-bottom: 30px;
+  color: #ffa100;
+  font-size: 4em;
+}
+.figure{
+  color: white;
+  font-size: 1em;
+  padding: 1%;
+  background-color: #d89510; 
+}
+.overlay_1{
+   width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  z-index:10;
+}
+.overlay_1:after {
+  content: '';
+  width: 200%;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #202020;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  left: 0;
+  transition: all .3s ease;
+}
+.overlay-text {
+    position: relative;
+    top:-200px;
+    margin-bottom:1em;
+    margin-top:3em;
+  font-family: "Montserrat";
+    font-size: 2.25em;
+    font-weight: 200;
+    color:white;
+    text-align: center;
+    letter-spacing:5px;
+    transition:all .3s cubic-bezier(.3, 0, 0, 1.3);
+  }
+.overlay-link{
+  position: relative;
+  display: block;
+  width: 60%;
+  top: 220px;
+  padding: 10px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-size: 1.25em;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+.overlay-link:hover{
+  background-color: white;
+      color:#202020;
+  text-decoration: none;
+}
 
+
+.boxy:hover .overlay-text {
+  top: 0;
+}
+.boxy:hover .overlay-link{
+  top: 0;
+}
+.boxy:hover .overlay_1:after {
+  opacity: .75;
+}
+
+.box_1{
+  background-image: url('service-1.jpg');
+}
+.box_2{
+  background-image: url('service-2.jpg');
+}
+.box_3{
+  background-image: url('service-3.jpg');
+}
+.box_4{
+  background-image: url('service-4.jpg');
+}
+.box_5{
+  background-image: url('carousel-1.jpg');
+}
+.box_6{
+  background-image: url('carousel-3.jpg');
+}
+</style>
 <body>
     
     <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s" style="background-color: #3f505a !important; line-height: 0.25; ">
@@ -62,7 +177,7 @@
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Category</a>
-                <!-- <a href="service.html" class="nav-item nav-link active">Projects</a> -->
+                <a href="project.html" class="nav-item nav-link active">Projects</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
             <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">PLACE ORDER</a>
@@ -72,126 +187,78 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <h1 class="display-1 text-white animated slideInDown">Products</h1>
+            <h1 class="display-1 text-white animated slideInDown">Projects</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb text-uppercase mb-0">
                     <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">Products</li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Projects</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
 
-    <!-- project -->
-    <div class="container-xxl project py-5">
+    <div class="portfolio">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h4 class="section-title">Our Projects</h4>
-                <h1 class="display-5 mb-4" style="font-size: 39px !important;">Check out the projects we have worked on</h1>
-            </div>
-            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-lg-4">
-                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                            <h3 class="m-0"> Modern Complex</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                            <h3 class="m-0"> Royal Hotel</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <h3 class="m-0"> Mexwel Buiding</h3>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <h3 class="m-0"> Shopping Complex</h3>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="tab-content w-100">
-                        <div class="tab-pane fade show active" id="tab-pane-1">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-1.jpg"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3" style="font-size: 36px! important;">18 Years Of Experience In Industry</h1>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-secondary me-3"></i>Design Approach</p>
-                                    <p><i class="fa fa-check text-secondary me-3"></i>Innovative Solutions</p>
-                                    <p><i class="fa fa-check text-secondary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-secondary py-2 px-4 mt-3">READ MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-2">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-2.jpg"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3" style="font-size: 36px! important;">15 Years Of Experience In Industry</h1>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-secondary me-3"></i>Design Approach</p>
-                                    <p><i class="fa fa-check text-secondary me-3"></i>Innovative Solutions</p>
-                                    <p><i class="fa fa-check text-secondary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-secondary py-2 px-4 mt-3">READ MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-3">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-3.png"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3" style="font-size: 36px! important;">16 Years Of Experience In Industry</h1>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-secondary me-3"></i>Design Approach</p>
-                                    <p><i class="fa fa-check text-secondary me-3"></i>Innovative Solutions</p>
-                                    <p><i class="fa fa-check text-secondary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-secondary py-2 px-4 mt-3">READ MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-4">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-4.jpg"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h1 class="mb-3" style="font-size: 36px! important;">10 Years Of Experience In Industry</h1>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-secondary me-3"></i>Design Approach</p>
-                                    <p><i class="fa fa-check text-secondary me-3"></i>Innovative Solutions</p>
-                                    <p><i class="fa fa-check text-secondary me-3"></i>Project Management</p>
-                                    <a href="" class="btn btn-secondary py-2 px-4 mt-3">READ MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h4 class="section-title">Our Projects</h4>
+            <h1 class="display-5 mb-4" style="font-size: 39px !important;">Check Our Successfull Projects</h1>
         </div>
-    </div>
-    <!-- project -->
-        
+          
+          <div class="row">
+          <div class=" boxy  box_1 col-md-6">
+            <span class="figure"> Vibe </span>
+             <div class="overlay_1">
+               <h2 class="overlay-text"> 44 Apartment units </h2>
+               <a href=# class="overlay-link"> 7377 14th Ave, Burnaby (2012) </a>
+             </div>
+            </div>
+            <div class=" boxy  box_2">
+            <span class="figure">Metric Living</span>
+             <div class="overlay_1">
+               <h2 class="overlay-text">45 apartment units</h2>
+               <a href=# class="overlay-link">6860 Royal Oak, Burnaby (2017)</a>
+             </div>
+            </div>
+          </div>
+          
+          <div class="row">
+          <div class=" boxy  box_3 col-md-6">
+            <span class="figure">Wesley</span>
+             <div class="overlay_1">
+               <h2 class="overlay-text">78 apartment units</h2>
+               <a href=# class="overlay-link">5485 Brydon Cr, Langley (2019)</a>
+             </div>
+            </div>
+            <div class=" boxy  box_4">
+            <span class="figure"> Saavin</span>
+             <div class="overlay_1">
+               <h2 class="overlay-text">42 apartment units</h2>
+               <a href=# class="overlay-link">6968 Royal Oak Ave, Burnaby (2019)</a>
+             </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class=" boxy  box_5 col-md-6">
+              <span class="figure">Ezekeil</span>
+               <div class="overlay_1">
+                 <h2 class="overlay-text">104 apartment units</h2>
+                 <a href=# class="overlay-link">5486 200 street, Langley (2020)</a>
+               </div>
+              </div>
+              <div class=" boxy  box_6">
+              <span class="figure"> ICON </span>
+               <div class="overlay_1">
+                 <h2 class="overlay-text"> 98 apartment units </h2>
+                 <a href=# class="overlay-link">20061 Fraser Highway, Langley</a>
+               </div>
+              </div>
+            </div>
+          
+        </div><!--container end-->
+      </div><!--portfolio end-->
+
     <footer class="footer-section">
         <div class="container">
             <div class="footer-content pt-5 pb-5">
