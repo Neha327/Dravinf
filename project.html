@@ -30,119 +30,176 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <style>
-    .portfolio {
-margin-top: 50px;
+     .portfolio {
+        margin-top: 50px;
+    }
     
-}
-.boxy{
-  position: relative;
-    display: block;
-  width: 40%;
-  height: 300px;
-  margin: 0 auto 2em;
-  padding: 0;
-  background-size: cover;
-  border-radius: 10px;
-  box-shadow:0px 25px 50px rgba(0,0,0,.5);
-  overflow:hidden;
-  transition:all .4s ease;
-}
-.portfolio h3{
-  padding-left: 326px;
-  margin-bottom: 30px;
-  color: #ffa100;
-  font-size: 4em;
-}
-.figure{
-  color: white;
-  font-size: 1em;
-  padding: 1%;
-  background-color: #d89510; 
-}
-.overlay_1{
-   width: 100%;
-  height: 100%;
-  position: absolute;
-  top:0;
-  z-index:10;
-}
-.overlay_1:after {
-  content: '';
-  width: 200%;
-  border-radius: 10px;
-  height: 100%;
-  background-color: #202020;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  z-index: -10;
-  left: 0;
-  transition: all .3s ease;
-}
-.overlay-text {
-    position: relative;
-    top:-200px;
-    margin-bottom:1em;
-    margin-top:3em;
-  font-family: "Montserrat";
-    font-size: 2.25em;
-    font-weight: 200;
-    color:white;
-    text-align: center;
-    letter-spacing:5px;
-    transition:all .3s cubic-bezier(.3, 0, 0, 1.3);
-  }
-.overlay-link{
-  position: relative;
-  display: block;
-  width: 60%;
-  top: 220px;
-  padding: 10px;
-  margin: 0 auto;
-  font-family: "Montserrat";
-  color: white;
-  letter-spacing: 3px;
-  text-decoration: none;
-  text-align: center;
-  border: 2px solid white;
-  border-radius: 3px;
-  font-size: 1.25em;
-  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
-}
-.overlay-link:hover{
-  background-color: white;
-      color:#202020;
-  text-decoration: none;
+    .boxy {
+        position: relative;
+        display: block;
+        width: 40%;
+        height: 300px;
+        margin: 0 auto 2em;
+        padding: 0;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 0px 25px 50px rgba(0, 0, 0, .5);
+        overflow: hidden;
+        transition: all .4s ease;
+    }
+    
+    .portfolio h3 {
+        padding-left: 326px;
+        margin-bottom: 30px;
+        color: #ffa100;
+        font-size: 4em;
+    }
+    
+    .figure {
+        color: white;
+        font-size: 1em;
+        padding: 1%;
+        background-color: #d89510;
+    }
+    
+    .overlay_1 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+    }
+    
+    .overlay_1:after {
+        content: '';
+        width: 200%;
+        border-radius: 10px;
+        height: 100%;
+        background-color: #202020;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        z-index: -10;
+        left: 0;
+        transition: all .3s ease;
+    }
+    
+    .overlay-text {
+        position: relative;
+        top: -200px;
+        margin-bottom: 1em;
+        margin-top: 3em;
+        font-family: "Montserrat";
+        font-size: 2.25em;
+        font-weight: 200;
+        color: white;
+        text-align: center;
+        letter-spacing: 5px;
+        transition: all .3s cubic-bezier(.3, 0, 0, 1.3);
+    }
+    
+    .overlay-link {
+        position: relative;
+        display: block;
+        width: 60%;
+        top: 220px;
+        padding: 10px;
+        margin: 0 auto;
+        font-family: "Montserrat";
+        color: white;
+        letter-spacing: 3px;
+        text-decoration: none;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 3px;
+        font-size: 1.25em;
+        transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+    }
+    
+    .overlay-link:hover {
+        background-color: white;
+        color: #202020;
+        text-decoration: none;
+    }
+    
+    .boxy:hover .overlay-text {
+        top: 0;
+    }
+    
+    .boxy:hover .overlay-link {
+        top: 0;
+    }
+    
+    .boxy:hover .overlay_1:after {
+        opacity: .75;
+    }
+    
+    .box_1 {
+        background-image: url('service-1.jpg');
+    }
+    
+    .box_2 {
+        background-image: url('service-2.jpg');
+    }
+    
+    .box_3 {
+        background-image: url('service-3.jpg');
+    }
+    
+    .box_4 {
+        background-image: url('service-4.jpg');
+    }
+    
+    .box_5 {
+        background-image: url('carousel-1.jpg');
+    }
+
+    .box_6 {
+        background-image: url('carousel-3.jpg');
+    }
+
+    @media only screen and (max-width: 768px) {
+    .boxy {
+        width: 80%;
+    }
+
+    .portfolio h3 {
+        padding-left: 0;
+        font-size: 2em;
+    }
+
+    .overlay-link {
+        width: 80%;
+    }
 }
 
+@media only screen and (max-width: 768px) {
+    .boxy {
+        width: 80%;
+    }
 
-.boxy:hover .overlay-text {
-  top: 0;
-}
-.boxy:hover .overlay-link{
-  top: 0;
-}
-.boxy:hover .overlay_1:after {
-  opacity: .75;
+    .portfolio h3 {
+        padding-left: 0;
+        font-size: 2em;
+    }
+
+    .overlay-link {
+        width: 80%;
+    }
 }
 
-.box_1{
-  background-image: url('service-1.jpg');
-}
-.box_2{
-  background-image: url('service-2.jpg');
-}
-.box_3{
-  background-image: url('service-3.jpg');
-}
-.box_4{
-  background-image: url('service-4.jpg');
-}
-.box_5{
-  background-image: url('carousel-1.jpg');
-}
-.box_6{
-  background-image: url('carousel-3.jpg');
+@media only screen and (max-width: 480px) {
+    .boxy {
+        width: 90%;
+    }
+
+    .portfolio h3 {
+        font-size: 1.5em;
+    }
+
+    .overlay-link {
+        width: 90%;
+    }
 }
 </style>
 <body>
@@ -239,7 +296,7 @@ margin-top: 50px;
             </div>
           </div>
 
-          <div class="row">
+          <div class="row" style="margin-bottom: 20px;">
             <div class=" boxy  box_5 col-md-6">
               <span class="figure">Ezekeil</span>
                <div class="overlay_1">
