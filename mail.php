@@ -3,19 +3,21 @@
   $name = $_POST['name'];
   $message = $_POST['message'];
   $subject = $_POST['subject'];
-  
+
 
 
 if($_POST){
 
     $data = [
         'email'     => $email,
-        'status'    => 'subscribed',
-        'subject' =>   $subject,
+        'name'  =>    $name,
         'message'  =>    $message,
-        'fname'  =>    $name
+        'subject' =>   $subject,
+        'status'    => 'subscribed'
+        
     ];
-   
+    
+    // NOTE: status having 4 Option --"subscribed","unsubscribed","cleaned","pending"
     $res = syncMailchimp($data);
     
     if($res == 200){
@@ -30,7 +32,7 @@ if($_POST){
 
 function syncMailchimp($data)
 {
-    $apiKey = '798691308b5ffd9f742f5b46ecfe10f6-us10';
+    $apiKey = '558ea7675af82e5cf6198031f2d16d51-us10';
     $listId = '0a3e0d1b67';
 
     $memberId = md5(strtolower($data['email']));
@@ -39,9 +41,6 @@ function syncMailchimp($data)
 
     $json = json_encode([
         'email_address' => $data['email'],
-        'subject' => $data['subject'],
-        'message' => $data['message'],
-        'fname' => $data['fname'],
         'status' => $data['status']
     ]);
 
